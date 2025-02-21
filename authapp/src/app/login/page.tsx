@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 
 
 export default function LoginPage(){
+    const router = useRouter();
     const [user, setUser] = React.useState({
         email:"",
         password:"",
