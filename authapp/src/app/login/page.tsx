@@ -23,16 +23,16 @@ export default function LoginPage(){
            
             <label htmlFor="email">email</label>
             <input 
-                className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
+                className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
                 id="email"
                 type="email"
                 value={user.email}
                 onChange={(e) => setUser({...user, email:e.target.value})}
                 placeholder="email"
             />
-             <label htmlFor="password">password</label>
+            <label htmlFor="password">password</label>
             <input 
-                className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600"
+                className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
                 id="password"
                 type="password"
                 value={user.password}
@@ -41,10 +41,10 @@ export default function LoginPage(){
             />
             <button 
             onClick={LoginPage}
-            className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600">
+            className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black">
                 Login here
             </button>
-            <Link href="/signup">Visit signUp page</Link>
+            <Link href="/signup">Visit signup page</Link>
         </div>
     )
 }
